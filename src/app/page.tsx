@@ -1,3 +1,5 @@
+import { ParalaxImageGallery } from "@/components/paralax-image-gallery";
+
 export default function Home() {
   return (
     <div className="p-8 flex flex-col gap-16">
@@ -21,7 +23,7 @@ export default function Home() {
         <div>Fokussiert an's Ziel.</div>
       </div>
 
-      <div className="text-display font-serif-numeric">01</div>
+      <ParalaxImageGallery />
 
       <div className="text-display-lg">Shifted</div>
     </div>
