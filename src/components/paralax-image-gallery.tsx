@@ -113,7 +113,7 @@ const GalleryItem: FC<{ item: Item; fixed: MotionValue<boolean> }> = ({
         className="absolute top-0 left-0 h-full w-full flex items-center justify-end"
         style={{ position, paddingInline: padding }}
       >
-        <div className="w-2/3 h-[50vh] relative overflow-hidden">
+        <div className="w-2/3 h-[60vh] relative overflow-hidden">
           <motion.div
             className="w-full"
             style={{
