@@ -20,7 +20,7 @@ export default function Home() {
       <div className="text-heading-lg">
         <div className="font-serif">Stilvoll.</div>
         <div className="font-sans-variant">Einzigartig.</div>
-        <div>Fokussiert an's Ziel.</div>
+        <div>{"Fokussiert an's Ziel."}</div>
       </div>
 
       <ParalaxImageGallery />
