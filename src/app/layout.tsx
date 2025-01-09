@@ -1,17 +1,28 @@
-import type { Metadata } from "next";
+"use client";
+
 import "./globals.css";
 import { novar, switzer, syne, tiemposHeadline } from "@/fonts";
-
-export const metadata: Metadata = {
-  title: "Shifted Studio",
-  description: "Digital Experiences",
-};
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    const lenis = new Lenis({ autoRaf: true });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
+
   return (
     <html lang="en">
       <body
