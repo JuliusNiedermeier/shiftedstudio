@@ -1,5 +1,6 @@
 import { ExpansionToggleIcon } from "@/components/expansion-toggle-icon";
 import { ParalaxImageGallery } from "@/components/paralax-image-gallery";
+import { SiteLogo } from "@/components/site-logo";
 import {
   Accordion,
   AccordionContent,
@@ -38,6 +39,8 @@ const services: Service[] = [
 export default function Home() {
   return (
     <div className="p-8 flex flex-col gap-16">
+      <SiteLogo />
+
       <div>
         <div className="text-label-primary">Berlin</div>
         <div className="text-label-secondary">Germany</div>
