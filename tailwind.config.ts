@@ -84,6 +84,22 @@ export default {
         },
       ],
     },
+    keyframes: {
+      expandAccordionContent: {
+        from: { height: "0px" },
+        to: { height: "var(--radix-accordion-content-height)" },
+      },
+      collapseAccordionContent: {
+        from: { height: "var(--radix-accordion-content-height)" },
+        to: { height: "0px" },
+      },
+    },
+    animation: {
+      expandAccordionContent:
+        "expandAccordionContent 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+      collapseAccordionContent:
+        "collapseAccordionContent 300ms cubic-bezier(0.87, 0, 0.13, 1)",
+    },
   },
   plugins: [],
 } satisfies Config;
