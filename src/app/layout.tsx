@@ -132,10 +132,9 @@ export default function RootLayout({
 
         <motion.div
           ref={contentRef}
-          className="bg-background-primary origin-bottom relative"
+          className="bg-background-primary origin-bottom"
           style={{ scale: contentScale }}
         >
-          <div className="absolute left-0 top-0 w-full bg-[red] h-screen -translate-y-full"></div>
           {children}
         </motion.div>
 
