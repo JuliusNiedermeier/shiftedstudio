@@ -25,7 +25,11 @@ export default {
       "sans-variant": ["var(--font-syne)"],
       "serif-numeric": ["var(--font-novar)"],
     },
-    fontWeight: {},
+    fontWeight: {
+      regular: "400",
+      semibold: "600",
+      bold: "700",
+    },
     fontSize: {
       "label-primary": [
         `${pxRem(16)}rem`,
